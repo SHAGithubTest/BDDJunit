@@ -1,0 +1,5 @@
+testRunner\FeatureRunner.class
+stepDefs\StepDefClick.class
+stepDefs\StepDefEnterText.class
+stepDefs\StepDefAssertText.class
+stepDefs\StepDefBrowser.class
