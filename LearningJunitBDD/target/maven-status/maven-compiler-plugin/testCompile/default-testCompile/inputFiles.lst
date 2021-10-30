@@ -1,5 +1,8 @@
-E:\Automation_Framework\LearningJunitBDD\LearningJunitBDD\src\test\java\stepDefs\StepDefAssertText.java
-E:\Automation_Framework\LearningJunitBDD\LearningJunitBDD\src\test\java\testRunner\FeatureRunner.java
-E:\Automation_Framework\LearningJunitBDD\LearningJunitBDD\src\test\java\stepDefs\StepDefEnterText.java
-E:\Automation_Framework\LearningJunitBDD\LearningJunitBDD\src\test\java\stepDefs\StepDefClick.java
-E:\Automation_Framework\LearningJunitBDD\LearningJunitBDD\src\test\java\stepDefs\StepDefBrowser.java
+C:\Workspaces\BDDJunit\LearningJunitBDD\src\test\java\stepDefs\StepDefBrowser.java
+C:\Workspaces\BDDJunit\LearningJunitBDD\src\test\java\stepDefs\StepDefStoreData.java
+C:\Workspaces\BDDJunit\LearningJunitBDD\src\test\java\stepDefs\StepDefEnterText.java
+C:\Workspaces\BDDJunit\LearningJunitBDD\src\test\java\testRunner\JarRunner.java
+C:\Workspaces\BDDJunit\LearningJunitBDD\src\test\java\stepDefs\StepDefAssertText.java
+C:\Workspaces\BDDJunit\LearningJunitBDD\src\test\java\stepDefs\StepDefFixture.java
+C:\Workspaces\BDDJunit\LearningJunitBDD\src\test\java\testRunner\FeatureRunner.java
+C:\Workspaces\BDDJunit\LearningJunitBDD\src\test\java\stepDefs\StepDefClick.java

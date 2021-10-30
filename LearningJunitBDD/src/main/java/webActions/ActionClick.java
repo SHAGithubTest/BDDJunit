@@ -1,15 +1,27 @@
 package webActions;
 
+import javax.lang.model.element.ExecutableElement;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.pagefactory.ByAll;
 
 import driverFactory.ManageDriver;
+import fixtureUtils.ExcelActions;
+import fixtureUtils.FixtureManager;
+import gherkinTagUtils.GherkinTagManager;
 
 public class ActionClick {
 	
 	
 	public static boolean click(String locator)
 	{
+		
+		
+		
+		if (locator.startsWith("#")) {
+			
+			locator = FixtureManager.getExcelUtils().getCellData("uid");
+		}
 		
 		try {
 			Thread.sleep(3000);

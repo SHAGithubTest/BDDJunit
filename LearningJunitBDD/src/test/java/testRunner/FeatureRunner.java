@@ -9,14 +9,15 @@ import io.cucumber.junit.CucumberOptions;
 	@CucumberOptions(
 			stepNotifications = true,
 			plugin={"pretty","com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
-			features={"src/test/resources/features/"},
+			features={"src/test/resources/features/login6.feature"},
+			tags= "@Login4 or @Login6",
 			glue={"stepDefs", "appHooks"}
 			)
 	public class FeatureRunner {
-		
 
-			
 	}
+	
+	
 	
 	
 

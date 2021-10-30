@@ -23,6 +23,11 @@ public class StepDefBrowser {
 	public void user_navigate_to_url(String url) {
 	 Assert.assertTrue(ActionBrowserOperation.navigateToUrl(url));    
 	}
+	
+	@And("user switch to window {string}")
+	public void user_switch_to_window(String windowName) {
+		 Assert.assertTrue(ActionBrowserOperation.switchWindow(windowName));    
+		}
 
 
 }
