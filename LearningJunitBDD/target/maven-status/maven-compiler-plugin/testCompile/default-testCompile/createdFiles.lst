@@ -1,0 +1,8 @@
+stepDefs\StepDefClick.class
+stepDefs\StepDefEnterText.class
+stepDefs\StepDefBrowser.class
+stepDefs\StepDefRestAPI.class
+testRunner\JarRunner.class
+testRunner\FeatureRunner.class
+stepDefs\StepDefFixture.class
+stepDefs\StepDefStoreData.class

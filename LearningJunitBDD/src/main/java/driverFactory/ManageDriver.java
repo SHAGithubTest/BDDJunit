@@ -12,17 +12,33 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
+		
+
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class ManageDriver {
 
 	static boolean runLocal = true;
+	static private boolean hradless = false;
 
 	public static ThreadLocal<WebDriver> tlDriver = new ThreadLocal<>();
 	public static ThreadLocal<RemoteWebDriver> tlDriverRemDriver = new ThreadLocal<>();
 
 	public WebDriver initDriver(String browserName) {
 		System.out.println("Browser Name:::::" + browserName);
+
+		if (hradless) {
+			if (browserName.equalsIgnoreCase("Chrome")) {
+				WebDriverManager.chromedriver().setup();
+				tlDriver.set(new ChromeDriver());
+
+			} else if (browserName.equalsIgnoreCase("Firefox")) {
+				WebDriverManager.chromedriver().setup();
+				tlDriver.set(new FirefoxDriver());
+
+			}
+		}
 
 		if (runLocal) {
 
@@ -83,11 +99,9 @@ public class ManageDriver {
 
 	public static WebDriver getDriver() {
 
-		if (runLocal) 
-		{
+		if (runLocal) {
 			return tlDriver.get();
-		} else 
-		{
+		} else {
 			return tlDriverRemDriver.get();
 		}
 

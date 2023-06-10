@@ -9,5 +9,5 @@ Feature: LoginFacebook4
     #And user enters "PWD12345" into "//*[@id='pass']"
     And user enters "#uid" into "//*[@id='email']"
     And user enters "#pwd" into "//*[@id='pass']"
-    And user clicks on "English (UK)"
+    #And user clicks on "English (UK)"
     And user captures "//*[@class='_8eso']" into "#NewData"
